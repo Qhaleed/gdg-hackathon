@@ -1,15 +1,22 @@
 .nav {
+  background-color: #374151;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #d5d9e0;
 }
 
 .nav-brand {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 10%;
+}
+.nav-brand img {
+  width: auto; /* Ensure the width adapts to the image's intrinsic ratio */
+  height: 2.5rem; /* Set a fixed height to control the size */
+  object-fit: contain; /* Prevent stretching or distortion */
 }
 
 .nav-logo {
@@ -19,7 +26,7 @@
 
 .nav-title {
   font-size: 1.125rem;
-  color: #374151;
+  color: white;
 }
 
 .nav-links {
@@ -30,7 +37,7 @@
 
 .nav-link {
   font-size: 0.875rem;
-  color: #4b5563;
+  color: white;
   text-decoration: none;
   transition: color 0.2s;
 }
