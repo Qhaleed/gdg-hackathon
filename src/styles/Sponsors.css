@@ -1,0 +1,22 @@
+.sponsors {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f1f3f4;
+}
+
+.sponsors h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sponsor-logos img {
+  max-width: 150px;
+  height: auto;
+}

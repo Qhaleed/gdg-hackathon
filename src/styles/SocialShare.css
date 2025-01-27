@@ -1,0 +1,26 @@
+.social-share {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f1f3f4;
+}
+
+.social-share h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.share-buttons a {
+  color: #202124;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.share-buttons a:hover {
+  color: #34a853;
+}

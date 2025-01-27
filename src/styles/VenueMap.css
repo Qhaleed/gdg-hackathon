@@ -1,0 +1,15 @@
+.venue-map {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.venue-map h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.venue-map iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

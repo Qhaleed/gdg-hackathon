@@ -1,0 +1,26 @@
+.countdown {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f1f3f4;
+}
+
+.countdown h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timer span {
+  background-color: #202124;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 80px;
+}
