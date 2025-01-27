@@ -1,4 +1,4 @@
-# GDG Ateneo Hackathon 2023 Website
+# GDG Ateneo Hackathon 2025 
 
 Welcome to the official repository for the **GDG Ateneo Hackathon 2023** website! This project is built using **React** and is designed to advertise and provide information about the upcoming Hackathon hosted by Google Developer Groups (GDG) on Campus Ateneo Chapter.
 
@@ -47,8 +47,4 @@ gdg-hackathon/
    git clone https://github.com/Qhaleed/gdg-hackathon.git
    cd gdg-hackathon
 
-### Install Dependencies:
-#npm install
 
-### Run the Development Server:
-#npm start
