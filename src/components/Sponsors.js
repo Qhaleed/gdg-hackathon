@@ -6,9 +6,9 @@ const Sponsors = () => {
         <section id="sponsors" className="sponsors">
             <h2>Sponsors</h2>
             <div className="sponsor-logos">
-                <img src="/assets/sponsors/sponsor1.png" alt="Sponsor 1" />
-                <img src="/assets/sponsors/sponsor2.png" alt="Sponsor 2" />
-                <img src="/assets/sponsors/sponsor3.png" alt="Sponsor 3" />
+                <img src="./ADZU.jpg" alt="Sponsor 1" />
+                <img src="./CSITE.jpg" alt="Sponsor 2" />
+                <img src="./SITEAO.jpg" alt="Sponsor 3" />
             </div>
         </section>
     );

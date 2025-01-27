@@ -7,12 +7,15 @@ export function Hero() {
             <div className="hero-gradient" />
             <div className="hero-grid" />
             <div className="hero-content">
-                <h1 className="hero-title">Connect with local developers</h1>
+                <h1 className="hero-title">THE BLUECODE</h1>
+                <p className="hero-subtitle">Zamboanga Hackathon 2025</p>
                 <p className="hero-description">
-                    When you join a Google Developer Group, you'll have the opportunity to learn new skills in a variety of
-                    formats. You'll also meet local developers virtually or in-person with similar interests in technology. The
-                    community prides itself on being an inclusive environment where everyone and anyone interested in tech - from
-                    beginner developers to experienced professionals are welcome to join.
+                    The BlueCode: Zamboanga Hackathon 2025 marks the first-ever city-wide
+                    hackathon since the pre-pandemic era, making it a groundbreaking event
+                    for the local tech community. Organized by the Google Developer Groups
+                    On Campus Ateneo de Zamboanga University Chapter, it is designed to bring
+                    together students from diverse academic institutions with, this two day
+                    competition aims to inspire innovation, creativity, and collaboration.
                 </p>
                 <button className="hero-button">Sign up</button>
             </div>

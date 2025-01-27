@@ -1,7 +1,8 @@
 .countdown {
-  padding: 4rem 2rem;
+  padding: 4rem 0;
   text-align: center;
-  background-color: #f1f3f4;
+  background-color: #f1f3f4; /* Original background color */
+  width: 100%;
 }
 
 .countdown h2 {
@@ -15,12 +16,47 @@
   gap: 2rem;
   font-size: 2rem;
   font-weight: bold;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .timer span {
-  background-color: #202124;
+  background-color: #202124; /* Original background color */
   color: #fff;
   padding: 1rem;
   border-radius: 5px;
   min-width: 80px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .countdown h2 {
+    font-size: 2rem; /* Slightly smaller font size for tablets */
+  }
+
+  .timer {
+    gap: 1.5rem; /* Reduce gap between timer units */
+    font-size: 1.5rem; /* Smaller font size for tablets */
+  }
+
+  .timer span {
+    padding: 0.8rem;
+    min-width: 70px; /* Slightly smaller width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown h2 {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+
+  .timer {
+    gap: 1rem; /* Further reduce gap for mobile */
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .timer span {
+    padding: 0.6rem;
+    min-width: 60px; /* Smaller width for mobile */
+  }
 }

@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .nav {
   background-color: #374151;
   display: flex;
@@ -5,39 +6,31 @@
   justify-content: space-around;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid #d5d9e0;
+  position: relative; /* Ensure nav is a reference for positioning */
 }
 
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  width: 10%;
 }
+
 .nav-brand img {
-  width: auto; /* Ensure the width adapts to the image's intrinsic ratio */
-  height: 2.5rem; /* Set a fixed height to control the size */
-  object-fit: contain; /* Prevent stretching or distortion */
-}
-
-.nav-logo {
-  width: 2rem;
-  height: 2rem;
-}
-
-.nav-title {
-  font-size: 1.125rem;
-  color: white;
+  width: auto;
+  height: 2.5rem;
+  object-fit: contain;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
 .nav-link {
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   color: white;
+  font-weight: 500;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -59,8 +52,58 @@
   background-color: #f3f4f6;
 }
 
-.search-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  color: #4b5563;
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 9999px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    transition: 3s;
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #374151;
+    position: absolute; /* Dropdown menu should appear relative to .nav */
+    top: 100%; /* Position it just below the navigation bar */
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform-origin: top; /* Set origin for animation */
+    opacity: 0; /* Initial state for animation */
+    transform: scaleY(0); /* Collapsed state for dropdown */
+    transition: transform 3.3s ease, opacity 3.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    opacity: 1; /* Fade in */
+    transform: scaleY(1); /* Expand vertically */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
 }
