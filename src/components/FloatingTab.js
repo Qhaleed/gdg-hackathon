@@ -24,11 +24,11 @@ const FloatingTab = () => {
         <div className={`floating-tab ${isVisible ? 'visible' : ''}`}>
             <div className="column">
                 <strong>Starts On:</strong>
-                <span>Jan 13, 2025 01:00 PM PST (Asia/Manila)</span>
+                <span>April 1, 2025 09:00 AM PST (Asia/Manila)</span>
             </div>
             <div className="column">
                 <strong>Ends On:</strong>
-                <span>Jan 14, 2025 01:00 PM PST (Asia/Manila)</span>
+                <span>April 3, 2025 09:00 AM PST (Asia/Manila)</span>
             </div>
             <div className="column">
                 <button className="register-button">Register Now</button>

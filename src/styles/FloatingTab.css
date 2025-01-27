@@ -52,3 +52,8 @@
 .register-button:hover {
   background-color: #2d8a4a; /* Darker Green */
 }
+@media (max-width: 768px) {
+  .floating-tab {
+    width: 80%;
+  }
+}
