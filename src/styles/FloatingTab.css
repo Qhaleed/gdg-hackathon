@@ -1,0 +1,54 @@
+.floating-tab {
+  position: fixed;
+  top: 20px; /* Adjust the distance from the top */
+  right: 20px; /* Adjust the distance from the right */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.floating-tab.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.column strong {
+  font-size: 0.9rem;
+  color: #202124;
+}
+
+.column span {
+  font-size: 0.8rem;
+  color: #5f6368;
+}
+
+.register-button {
+  padding: 8px 16px;
+  background-color: #34a853; /* Google Green */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #2d8a4a; /* Darker Green */
+}

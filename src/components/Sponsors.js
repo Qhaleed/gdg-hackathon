@@ -9,6 +9,10 @@ const Sponsors = () => {
                 <img src="./ADZU.jpg" alt="Sponsor 1" />
                 <img src="./CSITE.jpg" alt="Sponsor 2" />
                 <img src="./SITEAO.jpg" alt="Sponsor 3" />
+                <img src="./CSITE.jpg" alt="Sponsor 2" />
+                <img src="./SITEAO.jpg" alt="Sponsor 3" />
+                <img src="./CSITE.jpg" alt="Sponsor 2" />
+                <img src="./SITEAO.jpg" alt="Sponsor 3" />
             </div>
         </section>
     );

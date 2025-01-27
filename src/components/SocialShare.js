@@ -4,7 +4,7 @@ import '../styles/SocialShare.css';
 
 const SocialShare = () => {
     const eventUrl = encodeURIComponent(window.location.href);
-    const eventTitle = encodeURIComponent('GDG Ateneo Hackathon 2023');
+    const eventTitle = encodeURIComponent('GDG Ateneo Hackathon 2025');
 
     return (
         <section className="social-share">

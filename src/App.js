@@ -8,6 +8,7 @@ import Sponsors from './components/Sponsors';
 import VenueMap from './components/VenueMap';
 import Footer from './components/Footer';
 import SocialShare from './components/SocialShare';
+import FloatingTab from './components/FloatingTab';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <VenueMap />
       <SocialShare />
       <Footer />
+      <FloatingTab />
     </div>
   );
 }
