@@ -23,3 +23,32 @@ Welcome to the official repository for the **GDG Ateneo Hackathon 2023** website
 ---
 
 ## Project Structure
+gdg-hackathon/
+├── public/ # Static assets
+│ ├── assets/ # Images, logos, etc.
+│ └── index.html # Main HTML file
+├── src/ # Source code
+│ ├── components/ # Reusable React components
+│ ├── styles/ # CSS files for styling
+│ ├── App.js # Main application component
+│ └── index.js # Entry point
+├── package.json # Project dependencies
+├── README.md # Project documentation
+└── .gitignore # Files to ignore in Git
+## Setup Instructions
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Steps to Run the Project
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/gdg-hackathon.git
+   cd gdg-hackathon
+
+### Install Dependencies:
+#npm install
+
+### Run the Development Server:
+#npm start
