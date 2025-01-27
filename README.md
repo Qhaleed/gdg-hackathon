@@ -44,7 +44,7 @@ gdg-hackathon/
 ### Steps to Run the Project
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/gdg-hackathon.git
+   git clone https://github.com/Qhaleed/gdg-hackathon.git
    cd gdg-hackathon
 
 ### Install Dependencies:
