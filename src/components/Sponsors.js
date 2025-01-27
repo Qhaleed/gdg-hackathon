@@ -5,8 +5,8 @@ const Sponsors = () => {
     return (
         <section id="sponsors" className="sponsors">
             <h2>Sponsors</h2>
-            <div className="sponsor-logos">
-                <img src="./ADZU.jpg" alt="Sponsor 1" />
+            <div className="sponsor-logos" >
+                <img src="./ADZU.jpg" alt="Sponsor 1" loading='lazy' />
                 <img src="./CSITE.jpg" alt="Sponsor 2" />
                 <img src="./SITEAO.jpg" alt="Sponsor 3" />
                 <img src="./CSITE.jpg" alt="Sponsor 2" />
