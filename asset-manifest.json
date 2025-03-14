@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gdg-hackathon/static/css/main.a01e7ef3.css",
+    "main.js": "/gdg-hackathon/static/js/main.5de790df.js",
+    "index.html": "/gdg-hackathon/index.html",
+    "main.a01e7ef3.css.map": "/gdg-hackathon/static/css/main.a01e7ef3.css.map",
+    "main.5de790df.js.map": "/gdg-hackathon/static/js/main.5de790df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a01e7ef3.css",
+    "static/js/main.5de790df.js"
+  ]
+}
