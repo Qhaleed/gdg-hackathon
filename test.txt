@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Quiz</title>
+</head>
+<body>
+
+<h2>PHP Quiz</h2>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Correct answers
+    $correctAnswers = ['c', 'b', 'c']; // Answers for questions 1, 2, and 3
+    $score = 0;
+
+    // Check user answers
+    if ($_POST['q1'] === $correctAnswers[0]) $score++;
+    if ($_POST['q2'] === $correctAnswers[1]) $score++;
+    if ($_POST['q3'] === $correctAnswers[2]) $score++;
+
+    // Display results
+    echo "<p>Your score: $score/3</p>";
+    echo "<p>Method used: POST</p>";
+}
+?>
+
+<!-- Quiz Form -->
+<form action="" method="POST"> <!-- Using POST method -->
+    <p>1. What does PHP stand for?</p>
+    <input type="radio" name="q1" value="a"> a. Personal Home Page <br>
+    <input type="radio" name="q1" value="b"> b. Preprocessed Hypertext Page <br>
+    <input type="radio" name="q1" value="c"> c. PHP: Hypertext Preprocessor <br>
+
+    <p>2. What superglobal is used to get form data sent using POST?</p>
+    <input type="radio" name="q2" value="a"> a. $_GET <br>
+    <input type="radio" name="q2" value="b"> b. $_POST <br>
+    <input type="radio" name="q2" value="c"> c. $_REQUEST <br>
+
+    <p>3. Which symbol is used to define a PHP variable?</p>
+    <input type="radio" name="q3" value="a"> a. # <br>
+    <input type="radio" name="q3" value="b"> b. @ <br>
+    <input type="radio" name="q3" value="c"> c. $ <br>
+
+    <input type="submit" name="submit" value="Submit Quiz">
+</form>
+
+</body>
+</html>
