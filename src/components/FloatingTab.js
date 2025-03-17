@@ -31,7 +31,7 @@ const FloatingTab = () => {
                 <span>April 3, 2025 09:00 AM PST (Asia/Manila)</span>
             </div>
             <div className="column">
-                <button className="register-button" >Learn More</button>
+                <button className="register-button" onClick={() => window.location.href = "https://www.facebook.com/search/top?q=google%20developer%20groups%20on%20campus%20blue%20eagle"}>Learn More</button>
             </div>
         </div>
     );

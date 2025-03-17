@@ -17,7 +17,7 @@ export function Hero() {
                     together students from diverse academic institutions with, this two day
                     competition aims to inspire innovation, creativity, and collaboration.
                 </p>
-                <button className="hero-button">Sign up</button>
+                <button className="hero-button">Learn More</button>
             </div>
         </div>
     )
