@@ -1,0 +1,2 @@
+To run the app: npm start
+To deploy:ss

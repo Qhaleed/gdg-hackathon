@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/Navbar.css';
-
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -12,12 +11,15 @@ export function Navbar() {
         <nav className="nav">
             <div className="nav-brand">
                 <img
-                    src="./heading1.png"
+                    src={`${process.env.PUBLIC_URL}/heading1.png`}
                     alt="Google Developer Groups Logo"
                     className="nav-logo"
                     style={{ marginRight: '10px' }}
                 />
-                <img src="./AICG2.png" alt='Ateneo Informatics and Computing Guild Logo' className='nav-logo'></img>
+                <img src={`${process.env.PUBLIC_URL}/AICG2.png`} alt="Ateneo Informatics and Computing Guild Logo" className="nav-logo" />
+                <img src={`${process.env.PUBLIC_URL}/ADZU.png`} alt="ADZU Logo" className="nav-logo" />
+                <img src={`${process.env.PUBLIC_URL}/CSITE.png`} alt="ADZU Logo" className="nav-logo" />
+
             </div>
             <button className="hamburger-menu" onClick={toggleMobileMenu}>
                 <span className="hamburger-line"></span>
@@ -25,9 +27,9 @@ export function Navbar() {
                 <span className="hamburger-line"></span>
             </button>
             <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-                <a href="#" className="nav-link">About GDG</a>
-                <a href="#" className="nav-link">Chapters</a>
-                <a href="#" className="nav-link">Upcoming Events</a>
+                <a href="https://www.facebook.com/gdgocblueeagle" target='self' className="nav-link">About GDG</a>
+                <a href="https://gdg.community.dev/chapters/" target='self' className="nav-link">Chapters</a>
+                <a href="gdgocblueeagle" target='self' className="nav-link">Upcoming Events</a>
             </div>
         </nav>
     );
