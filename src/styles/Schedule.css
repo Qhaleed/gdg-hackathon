@@ -1,5 +1,5 @@
 .schedule {
-  padding: 4rem 0rem;
+  padding: 4rem 2rem;
   background-color: #ffffff; /* White background */
   text-align: center;
 }
@@ -8,6 +8,33 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #202124; /* Google Gray */
+}
+
+.schedule-overview {
+  background-color: #f1f3f4; /* Light gray background */
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d5d9e0; /* Light gray border */
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.schedule-overview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4285f4; /* Google Blue */
+}
+
+.schedule-overview p {
+  font-size: 1rem;
+  color: #202124; /* Google Gray */
+}
+
+.schedule-overview strong {
+  color: #34a853; /* Google Green */
 }
 
 .schedule-container {
@@ -23,7 +50,7 @@
   background-color: #f1f3f4; /* Light gray background */
   border-radius: 12px;
   padding: 1.5rem;
-  border: solid 1px #d5d9e0; /* Light gray border */
+  border: 1px solid #d5d9e0; /* Light gray border */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -75,12 +102,99 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .schedule-overview {
+    width: 90%; /* Make it more readable on smaller screens */
+    padding: 1rem;
+  }
+
   .schedule-container {
     flex-direction: column;
   }
 
   .schedule-column {
     width: 100%;
+  }
+}
+
+/* Schedule Overview */
+.schedule-overview {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.schedule-overview h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #202124; /* Google Gray */
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.schedule-overview h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #4285f4,
+    #34a853
+  ); /* Google Blue to Green */
+}
+
+.schedule-overview p {
+  font-size: 1.1rem;
+  color: #5f6368; /* Google Gray */
+  line-height: 1.8;
+  text-align: left;
+  margin: 1.5rem 0;
+  padding: 0 2rem;
+}
+
+.schedule-overview strong {
+  color: #4285f4; /* Google Blue */
+  font-weight: 500;
+  background: linear-gradient(90deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s ease;
+}
+
+/* Add subtle animation to "Hackathon Overview" */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.schedule-overview {
+  animation: fadeInSlide 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .schedule-overview {
+    padding: 1rem;
+  }
+
+  .schedule-overview p {
     padding: 0;
+    font-size: 1rem;
+  }
+
+  .schedule-overview h3 {
+    font-size: 1.75rem;
   }
 }

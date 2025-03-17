@@ -4,15 +4,15 @@ import '../styles/Sponsors.css';
 const Sponsors = () => {
     return (
         <section id="sponsors" className="sponsors">
-            <h2>Sponsors</h2>
+            <h2>Partners</h2>
             <div className="sponsor-logos" >
-                <img src="./ADZU.jpg" alt="Sponsor 1" loading='lazy' />
-                <img src="./CSITE.jpg" alt="Sponsor 2" />
-                <img src="./SITEAO.jpg" alt="Sponsor 3" />
-                <img src="./CSITE.jpg" alt="Sponsor 2" />
-                <img src="./SITEAO.jpg" alt="Sponsor 3" />
-                <img src="./CSITE.jpg" alt="Sponsor 2" />
-                <img src="./SITEAO.jpg" alt="Sponsor 3" />
+                <img src={`${process.env.PUBLIC_URL}/ADZU.png`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/CSITE.png`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/AICG1.png`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/wmsu2.jpg`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/PILLAR.png`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/ZPPSU.jpg`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/UZ.png`} alt="Sponsor 2" style={{ borderRadius: "0%" }} />
             </div>
         </section>
     );
