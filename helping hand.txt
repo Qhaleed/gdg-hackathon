@@ -1,2 +1,3 @@
 To run the app: npm start
-To deploy:ss
+To deploy: npm run build // build that shi
+To deploy: npm run deploy

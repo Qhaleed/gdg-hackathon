@@ -31,7 +31,7 @@ const FloatingTab = () => {
                 <span>April 3, 2025 09:00 AM PST (Asia/Manila)</span>
             </div>
             <div className="column">
-                <button className="register-button">Register Now</button>
+                <button className="register-button" >Learn More</button>
             </div>
         </div>
     );

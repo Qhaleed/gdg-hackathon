@@ -17,8 +17,8 @@ export function Navbar() {
                     style={{ marginRight: '10px' }}
                 />
                 <img src={`${process.env.PUBLIC_URL}/AICG2.png`} alt="Ateneo Informatics and Computing Guild Logo" className="nav-logo" />
-                <img src={`${process.env.PUBLIC_URL}/ADZU.png`} alt="ADZU Logo" className="nav-logo" />
-                <img src={`${process.env.PUBLIC_URL}/CSITE.png`} alt="ADZU Logo" className="nav-logo" />
+                <img src={`${process.env.PUBLIC_URL}/ADZU.jpg`} alt="ADZU Logo" className="nav-logo" style={{ borderRadius: "50%" }} />
+                <img src={`${process.env.PUBLIC_URL}/CSITE.jpg`} alt="CSITE Logo" className="nav-logo" style={{ borderRadius: "50%" }} />
 
             </div>
             <button className="hamburger-menu" onClick={toggleMobileMenu}>
