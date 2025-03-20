@@ -9,11 +9,11 @@ const Sponsors = () => {
                 <img src={`${process.env.PUBLIC_URL}/ADZU.png`} alt="Sponsor 2" />
                 <img src={`${process.env.PUBLIC_URL}/CSITE.png`} alt="Sponsor 2" />
                 <img src={`${process.env.PUBLIC_URL}/AICG1.png`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/wmsu2.jpg`} alt="Sponsor 2" />
+                <img src={`${process.env.PUBLIC_URL}/WMSU2.jpg`} alt="Sponsor 2" />
                 <img src={`${process.env.PUBLIC_URL}/PILLAR.png`} alt="Sponsor 2" />
                 <img src={`${process.env.PUBLIC_URL}/ZPPSU.jpg`} alt="Sponsor 2" />
                 <img src={`${process.env.PUBLIC_URL}/UZ.png`} alt="Sponsor 2" style={{ borderRadius: "0%" }} />
-            </div>
+            </div>+
         </section>
     );
 };

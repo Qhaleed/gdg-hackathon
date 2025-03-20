@@ -14,7 +14,7 @@ export function Navbar() {
                     src={`${process.env.PUBLIC_URL}/heading1.png`}
                     alt="Google Developer Groups Logo"
                     className="nav-logo"
-                    style={{ marginRight: '10px' }}
+                    style={{ marginRight: '10px', width: "10rem" }}
                 />
                 <img src={`${process.env.PUBLIC_URL}/AICG2.png`} alt="Ateneo Informatics and Computing Guild Logo" className="nav-logo" />
                 <img src={`${process.env.PUBLIC_URL}/ADZU.jpg`} alt="ADZU Logo" className="nav-logo" style={{ borderRadius: "50%", marginRight: "5px" }} />
