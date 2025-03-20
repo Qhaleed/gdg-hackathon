@@ -1,0 +1,120 @@
+.sponsors {
+  padding: 4rem 4rem;
+  padding-bottom: 10%;
+  text-align: center;
+  background-color: #f1f3f4;
+  height: 100%;
+}
+
+.sponsors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsors-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInDown 0.5s ease-out;
+}
+
+.partners-divider {
+  width: 50px;
+  height: 4px;
+  background-color: #4a4a4a;
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.investors-description {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.sponsor-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-item img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .sponsors {
+    padding: 3rem 2rem;
+  }
+
+  .sponsor-logos {
+    gap: 1.5rem;
+  }
+
+  .sponsor-item img {
+    max-width: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsors {
+    padding: 2rem 1rem;
+  }
+
+  .sponsors-title {
+    font-size: 2rem;
+  }
+
+  .sponsor-logos {
+    gap: 1rem;
+  }
+
+  .sponsor-item img {
+    max-width: 100px;
+  }
+}

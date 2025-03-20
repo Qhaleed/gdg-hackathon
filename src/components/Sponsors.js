@@ -1,21 +1,33 @@
-import React from 'react';
 import '../styles/Sponsors.css';
 
 const Sponsors = () => {
+    const investors = [
+        { name: "Converge", imageSrc: `${process.env.PUBLIC_URL}/converge.jpg` },
+        { name: "Converge", imageSrc: `${process.env.PUBLIC_URL}/vintazk.png` },
+        { name: "Converge", imageSrc: `${process.env.PUBLIC_URL}/converge.jpg` },
+    ];
+
     return (
-        <section id="sponsors" className="sponsors">
-            <h2>Partners</h2>
-            <div className="sponsor-logos" >
-                <img src={`${process.env.PUBLIC_URL}/ADZU.png`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/CSITE.png`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/AICG1.png`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/WMSU2.jpg`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/PILLAR.png`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/ZPPSU.jpg`} alt="Sponsor 2" />
-                <img src={`${process.env.PUBLIC_URL}/UZ.png`} alt="Sponsor 2" style={{ borderRadius: "0%" }} />
-            </div>+
-        </section>
+        <div className="investor-section">
+            <h2 className="investor-heading">Platinum Sponsors</h2>
+            <div className="sponsors-divider"></div>
+            <p className="sponsors-description">This event is proudly supported by esteemed organizations and individuals that share our vision and commitment to making a meaningful impact. Their generous contributions help us bring this event to life.</p>
+            <br />
+            <br />
+
+            <div className="investor-grid">
+                {investors.map((investor, index) => (
+                    <div key={index} className="investor-card">
+                        <img
+                            src={investor.imageSrc}
+                            alt={`${investor.name} Logo`}
+                            className="investor-image"
+                        />
+                    </div>
+                ))}
+            </div>
+        </div>
     );
-};
+}
 
 export default Sponsors;

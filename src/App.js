@@ -9,6 +9,7 @@ import VenueMap from './components/VenueMap';
 import Footer from './components/Footer';
 import SocialShare from './components/SocialShare';
 import FloatingTab from './components/FloatingTab';
+import Partners from './components/Partners';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Countdown />
       <Schedule />
+      <Partners />
       <Sponsors />
       <VenueMap />
       <SocialShare />
