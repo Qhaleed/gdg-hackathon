@@ -8,7 +8,11 @@ export function Hero() {
             <div className="hero-grid" />
             <div className="hero-content">
                 <h1 className="hero-title">THE BLUECODE</h1>
+                <br />
+
                 <p className="hero-subtitle">Zamboanga Hackathon 2025</p>
+                <br />
+                <br />
                 <p className="hero-description">
                     The BlueCode: Zamboanga Hackathon 2025 marks the first-ever city-wide
                     hackathon since the pre-pandemic era, making it a groundbreaking event

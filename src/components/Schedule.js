@@ -39,7 +39,6 @@ const Schedule = () => {
             <div className="schedule-overview">
                 <h3>Hackathon Overview</h3>
                 <p>
-                    <br />
                     <strong>Day 0: Pre-Hackathon Seminar</strong> serves as a preparatory session where industry experts and mentors share insights on ideation, project pitching, and teamwork to equip participants for the competition.
 
                     <br />

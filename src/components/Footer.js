@@ -10,11 +10,7 @@ const Footer = () => {
                     alt="Google Developer Groups Logo"
                     className="footer-logo"
                 />
-                <img
-                    src="./AICG2.png"
-                    alt="Ateneo Informatics and Computing Guild Logo"
-                    className="footer-logo"
-                />
+
             </div>
             <div className="footer-links">
                 <a href="#" className="footer-link">About GDG</a>
