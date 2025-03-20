@@ -29,12 +29,14 @@
 }
 
 .schedule-overview p {
+  text-align: justify;
   font-size: 1rem;
   color: #202124; /* Google Gray */
 }
 
 .schedule-overview strong {
   color: #34a853; /* Google Green */
+  text-align: justify;
 }
 
 .schedule-container {
@@ -104,6 +106,7 @@
   .schedule-overview {
     width: 90%; /* Make it more readable on smaller screens */
     padding: 1rem;
+    text-align: justify;
   }
 
   .schedule-container {
