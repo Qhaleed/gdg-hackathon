@@ -4,8 +4,9 @@ const Sponsors = () => {
     const investors = [
         { name: "Converge", imageSrc: `${process.env.PUBLIC_URL}/converge.jpg` },
         { name: "Converge", imageSrc: `${process.env.PUBLIC_URL}/vintazk.png` },
-        { name: "Converge", imageSrc: `${process.env.PUBLIC_URL}/converge.jpg` },
+        { name: "Rayyan-Pelaez ", imageSrc: `${process.env.PUBLIC_URL}/Rayyan-Pelaez.png` },
     ];
+    // Rayyan-Pelaez 
 
     return (
         <div className="investor-section">

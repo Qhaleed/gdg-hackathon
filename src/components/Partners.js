@@ -24,6 +24,9 @@ const Sponsors = () => {
                     <div className="sponsor-item">
                         <img src={`${process.env.PUBLIC_URL}/gdg-crimson2.jpg`} alt="GDG Crimson" style={{ transform: "scale(1)" }} />
                     </div>
+                    <div className="sponsor-item">
+                        <img src={`${process.env.PUBLIC_URL}/dict.png`} alt="DICT" style={{ transform: "scale(1)" }} />
+                    </div>
 
                     {/* Uncommented partners */}
                     {/* <div className="sponsor-item">
